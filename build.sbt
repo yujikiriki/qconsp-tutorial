@@ -32,19 +32,3 @@ scalacOptions ++= Seq(
   "-Ywarn-value-discard",
   "-Xfuture"     
 )
-
-publishMavenStyle := true
-
-pomIncludeRepository := { _ => false }
-
-publishArtifact in Test := false
-
-publishTo := {
-  val nexus = "http://somewhere/nexus/"
-  if (version.value.trim.endsWith("SNAPSHOT"))
-    Some("Nexus Snapshots" at nexus + "content/repositories/snapshots/")    
-  else
-    Some("Nexus Releases" at nexus + "content/repositories/releases")
-}
-
-credentials += Credentials("Sonatype Nexus Repository Manager", "somewhere", "user", "password")

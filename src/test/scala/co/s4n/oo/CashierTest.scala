@@ -20,8 +20,4 @@ class CashierTest extends FunSuite {
     fail()
   }
 
-  test("The coffee shop checks the inventory") {
-    fail()
-  }
-
 }
