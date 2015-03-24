@@ -9,7 +9,6 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.scala-lang"              %   "scala-library"             % "2.11.6",
   // Example: https://oss.sonatype.org/content/repositories/releases/com/typesafe/
   "com.typesafe.akka"           %%  "akka-actor"                % "2.3.9",
   "com.typesafe.scala-logging"  %%  "scala-logging"             % "3.1.0",
