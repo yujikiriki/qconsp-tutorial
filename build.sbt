@@ -1,14 +1,3 @@
-// Plugin settings
-import spray.revolver.RevolverPlugin._
-
-seq(Revolver.settings: _*)
-
-releaseSettings
-
-scalariformSettings
-
-// sbt
-
 organization := "co.s4n"
 
 name := "qconsp-tutorial"
@@ -20,10 +9,10 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "org.scala-lang"              %   "scala-library"             % "2.11.6"  withSources() withJavadoc(),
+  "org.scala-lang"              %   "scala-library"             % "2.11.6",
   // Example: https://oss.sonatype.org/content/repositories/releases/com/typesafe/
-  "com.typesafe.akka"           %%  "akka-actor"                % "2.3.9"   withSources() withJavadoc(),
-  "com.typesafe.scala-logging"  %%  "scala-logging"             % "3.1.0"   withSources() withJavadoc(),
+  "com.typesafe.akka"           %%  "akka-actor"                % "2.3.9",
+  "com.typesafe.scala-logging"  %%  "scala-logging"             % "3.1.0",
   "org.scalatest"               %   "scalatest_2.11"            % "2.2.4"   % "test"
 )
 

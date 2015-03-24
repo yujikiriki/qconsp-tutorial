@@ -12,13 +12,15 @@ class CashierTest extends FunSuite {
     var comanda: Comanda = cashier.createComanda("espresso", client)
     var beverage: CoffeeBeverage = barista.prepare(comanda)
 
-//    beverage.clientName = "Dr. Who"
-
     assert("Yuji" === beverage.clientName)
     assert("espresso" === beverage.name)
   }
 
-  test( "Coffee shop is now a profitable business!!!" ) {
+  test("Coffee shop is now a profitable business!!!") {
+    fail()
+  }
+
+  test("The coffee shop checks the inventory") {
     fail()
   }
 
